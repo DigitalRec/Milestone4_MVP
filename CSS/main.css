@@ -271,6 +271,13 @@ text-align:center;
   position: absolute;
   top:150px;
   right:30px;
+  display:none;
+}
+.booking-mobile{
+  position: absolute;
+  top:15px;
+  right:100px;
+  display:block;
 }
 @media (min-width:1138px){
     .desktop_nav, .topimage{
@@ -278,5 +285,11 @@ text-align:center;
     }
     .mobile_nav{
         display:none;
+    }
+    .booking-mobile{
+      display:none;
+    }
+    .booking-desktop {
+      display:block;
     }
 }
