@@ -244,6 +244,30 @@ text-align:center;
     padding 10px 30px;
 }
 
+
+.Lorem ul {
+
+  margin-top:1em;
+
+}
+
+.Lorem h2 {
+
+  margin-top:1em;
+}
+
+.lorem h2+ul {
+
+  margin-top:1em;
+}
+
+.Lorem h1 {
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .deals img {
   height:20em;
   width: 24em;
