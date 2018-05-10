@@ -93,7 +93,7 @@
   opacity: 0;
   transition: top 1s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
-.card:hover .card-detail{
+/* .card:hover .card-detail{
   opacity: 1;
   top :165px;
-}
+} */
