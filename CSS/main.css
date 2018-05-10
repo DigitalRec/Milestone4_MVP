@@ -249,6 +249,29 @@ text-align:center;
   width: 24em;
 }
 
+
+/*booking button*/
+
+.booking-button {
+  font-family: 'Anton',"Arial Black", sans-serif;
+  font-size: 1em;
+  border-radius: 0.4em;
+  grid-column: 65;
+  color:black;
+  grid-row:1;
+  justify-content: center;
+  align-items: center;
+  height:2em;
+  width:7em;
+  text-decoration: none;
+  text-align: center;
+  padding-top:1px;
+}
+.booking-desktop {
+  position: absolute;
+  top:150px;
+  right:30px;
+}
 @media (min-width:1138px){
     .desktop_nav, .topimage{
         display:block;
