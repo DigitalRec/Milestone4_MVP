@@ -13,7 +13,8 @@ https://css-tricks.com/three-line-menu-navicon*/
     padding:  0 50px;
     box-sizing:border-box;
     height:80px;
-    overflow: hidden;
+    overflow: visible;
+    display: none;
 }
 
 .desktop_nav .logo{
@@ -106,9 +107,11 @@ https://css-tricks.com/three-line-menu-navicon*/
     background:#1d1929;
     padding:10px 30px;
     box-sizing:border-box;
-    display:none;
+    display:block;
     position:fixed;
     top:0;
+    z-index: 1;
+
 }
 .mobile_nav .logo{
     padding:3px 0;
@@ -171,6 +174,8 @@ https://css-tricks.com/three-line-menu-navicon*/
   height:200px;
   width:100%;
   overflow: hidden;
+  display: none;
+
 }
 
 .expand{
@@ -244,11 +249,11 @@ text-align:center;
   width: 24em;
 }
 
-@media (max-width:1138px){
+@media (min-width:1138px){
     .desktop_nav, .topimage{
-        display:none;
+        display:block;
     }
     .mobile_nav{
-        display:block;
+        display:none;
     }
 }
