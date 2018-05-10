@@ -1,0 +1,61 @@
+.content{
+    background-color:rgba(0,0,0,0.3);
+    height:400px;
+}
+
+
+div button:hover{
+  background:#66ffb3;
+}
+
+div button:active{
+  font-weight:bold;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid gray;
+    padding: 5px 5px 5px 10px;
+    margin: 0 0 0 0;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #564040;
+    padding: 5px 0 5px 10px;
+
+}
+
+input, label {
+    display:block;
+}
+
+input[type="submit"]{
+    width:40%;
+    margin: 5% 30% 10px 30%;
+
+}
+
+form{
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom:20%
+}
+
+input:required:invalid{
+  background-image:url(../images/red_cross.png);
+  background-repeat:no-repeat;
+  background-position:right;
+  background-color:#ffd6cc;
+}
+
+input:required:valid{
+  background-image:url(../images/green_tick.png);
+  background-repeat:no-repeat;
+  background-position:right;
+  background-color:#ccffcc;
+}

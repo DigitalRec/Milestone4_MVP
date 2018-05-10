@@ -1,0 +1,254 @@
+/* Some of the html, css and JS thanks to
+https://www.adam-bray.com ,www.w3schools.com and
+https://css-tricks.com/three-line-menu-navicon*/
+
+*{
+    margin:0;
+    padding:0;
+}
+/* desktop navigation bar css*/
+.desktop_nav{
+    width:100%;
+    background-color: #1d1929;
+    padding:  0 50px;
+    box-sizing:border-box;
+    height:80px;
+    overflow: hidden;
+}
+
+.desktop_nav .logo{
+    font-size: 35px;
+    float:left;
+    padding: 0 20px;
+    line-height: 80px;
+
+}
+.desktop_nav .logo a{
+    color: white;
+    text-decoration:none;
+}
+.desktop_nav .dropdown{
+    float:right;
+    height:80px;
+}
+.dropdown_list{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width:auto;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+    z-index: 1;
+}
+
+.dropdown_list a{
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown_list a:hover{
+  background-color: grey;
+  color:yellow;
+}
+
+.desktop_nav .dropdown:hover .dropdown_list{
+    display: block;
+}
+
+
+.desktop_nav .dropdown .dropdown_btn{
+    display: inline-block;
+    padding:0 15px;
+    padding-top: 5px;
+    line-height: 72px;
+    transition: 0.5s;
+}
+
+.desktop_nav .dropdown .dropdown_btn a{
+    color:white;
+    text-decoration:none;
+    font-family: 'Anton',"Arial Black", Gadget, sans-serif;
+    font-size: 1.3em;
+}
+.desktop_nav .dropdown .dropdown_btn a .caret {
+                       border-bottom: 4px solid transparent;
+                       border-top: 4px solid white;
+                       border-right: 4px solid transparent;
+                       border-left: 4px solid transparent;
+                       border-radius: 1px;
+                       content: "";
+                       display: inline-block;
+                       height: 0;
+                       margin: 0 0 0 .25rem;
+                       transition: 250ms all ease;
+                       width: 0;
+                       vertical-align: middle;
+                       color:white;
+                   }
+.desktop_nav .dropdown .dropdown_btn:hover a .caret {
+                           border-top-color: rgb(140, 193, 193);
+                           transform: rotate(270deg);
+                       }
+.desktop_nav .dropdown:hover .dropdown_btn a{
+    color:#80c789;
+}
+
+
+.desktop_nav .dropdown .dropdown_btn:hover{
+    background: #263c69;
+}
+
+/* mobile navigation bar css*/
+.mobile_nav{
+    width:100%;
+    background:#1d1929;
+    padding:10px 30px;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:0;
+}
+.mobile_nav .logo{
+    padding:3px 0;
+    color: white;
+    float: left;
+}
+.mobile_nav .logo a{
+    color:white;
+    text-decoration:none;
+    font-size: 30px;
+}
+.mobile_nav .menu {
+    color:white;
+    float:right;
+    padding: 5px 10px;
+
+}
+.sidemenu .side_dropdown {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sidemenu .side_dropdown .side_dropdown_list{
+    display: none;
+    padding-left: 8px;
+}
+.sidemenu .side_dropdown .side_dropdown_btn a{
+      text-decoration: none;
+      color: #818181;
+      font-size: 25px;
+      transition: 0.3s;
+}
+.sidemenu .side_dropdown .side_dropdown_btn a:hover{
+      color: #ffffff;
+}
+.sidemenu .side_dropdown .side_dropdown_list a{
+          display: block;
+          text-decoration: none;
+          font-size: 22px;
+          color:#aaaece;
+          margin:10px;
+
+}
+.sidemenu .side_dropdown .side_dropdown_list a:hover{
+    color:#ffffff;
+}
+
+
+
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.topimage{
+  background-image: url("../images/topimage.jpg");
+  background-repeat: no-repeat;
+  background-size: 45% 200px;
+  background-color: black;
+  background-position: center;
+  height:200px;
+  width:100%;
+  overflow: hidden;
+}
+
+.expand{
+    display:block;
+}
+.active {
+    color:#ffffff;
+}
+.sidemenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0d223a;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align:center;
+    transition: 0.5s;
+}
+.sidemenu .sidemenu_close{
+    text-decoration: none;
+    position: absolute;
+    color:white;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.bodytext{
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+}
+.bodytext p{
+  font-size:30px;
+}
+.hamburger{
+  height:32px;
+  width:35px;
+}
+.hamburger:hover .burger_line, .hamburger:hover .burger_line_1{
+  background-color:#f1479d;
+}
+.burger_line_1, .burger_line{
+  background-color: white;
+  width: 35px;
+  height:5px;
+}
+.burger_line{
+  margin-top: 7px;
+}
+
+h1 {
+padding-top:3em;
+padding-bottom:1em;
+text-align:center;
+}
+
+.Lorem {
+    text-align:center;
+}
+
+.Lorem p {
+    padding 10px 30px;
+}
+
+.deals img {
+  height:20em;
+  width: 24em;
+}
+
+@media (max-width:1138px){
+    .desktop_nav, .topimage{
+        display:none;
+    }
+    .mobile_nav{
+        display:block;
+    }
+}
