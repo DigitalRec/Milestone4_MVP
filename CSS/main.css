@@ -190,7 +190,7 @@ https://css-tricks.com/three-line-menu-navicon*/
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #0d223a;
     overflow-x: hidden;
     padding-top: 60px;
